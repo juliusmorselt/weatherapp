@@ -28,7 +28,7 @@ body main .container {
 }
 
 body main .container .maincontent {
-  height: 370px;
+  min-height: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,47 +42,51 @@ body main .container .maincontent .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body main .container .maincontent .top #wtimg {
   border: none;
-  width: 200px;
-  height: 200px;
-  background-image: url(../assets/sun.png);
+  max-width: 200px;
+  max-height: 200px;
   background-size: cover;
 }
 
-body main .container .maincontent .top .qa {
-  width: 500px;
+body main .container .maincontent .top #qa {
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body main .container .maincontent .top .qa .q, body main .container .maincontent .top .qa .a {
-  width: 200px;
-  height: 300px;
+body main .container .maincontent .top #qa #q, body main .container .maincontent .top #qa .a {
+  max-width: 200px;
+  max-height: 300px;
   color: white;
 }
 
-body main .container .maincontent .top .qa .q p, body main .container .maincontent .top .qa .a p {
+body main .container .maincontent .top #qa #q p, body main .container .maincontent .top #qa .a p {
   margin: 0;
 }
 
-body main .container .maincontent .top .qa .q {
+body main .container .maincontent .top #qa #q {
   text-align: right;
+  display: none;
 }
 
-body main .container .maincontent .top .qa .a {
+body main .container .maincontent .top #qa .a {
   text-align: left;
 }
 
-body main .container .maincontent .top .qa .line {
+body main .container .maincontent .top #qa #line {
   background-color: white;
   width: 3px;
   height: 180px;
   border-radius: 10%;
   margin: 0px 20px 0px 20px;
+  display: none;
 }
 
 body main .container .maincontent .bottom input {

@@ -13,33 +13,31 @@
 <body>
     <main>
         <div class="container">
-            <div class="container maincontent">
+            <div class="container w-100 maincontent">
                 <div class="top">
-                    <img src="" id="wtimg">
-                    <div class="qa">
-                        <div class="q">
+                    <div id="wtimg"></div>
+                    <div id="qa" class="mw-100">
+                        <div id="q">
+                            <p>Where</p>
                             <p>Type</p>
                             <p>Degrees</p>
                             <p>Feels like</p>
-                            <p>Wind</p>
-                            <p>Rainfall</p>
+                            <p>Wind Speed</p>
                             <p>Humidity</p>
-                            <p>UV Index</p>
                         </div>
-                        <div class="line"></div>
+                        <div id="line"></div>
                         <div class="a">
+                            <p id="place"></p>
                             <p id="type"></p>
                             <p id="degrees"></p>
                             <p id="feelslike"></p>
                             <p id="wind"></p>
-                            <p id="rainfall"></p>
                             <p id="humidity"></p>
-                            <p id="uvindex"></p>
                         </div>
                     </div>
                 </div>
                 <div class="bottom">
-                    <input type="text" placeholder="Search for a place" class="w-100">
+                    <input type="text" placeholder="Search for a place" id="search" class="w-100">
                 </div>
             </div>
         </div>
@@ -49,3 +47,7 @@
     </footer>
 </body>
 </html>
+<script src="./javascript/index.js"></script>
+<script src="./javascript/api/currentweather.js"></script>
+<script src="./javascript/api/suggestions.js"></script>
+<script src="./javascript/api/keys/keys.js"></script>
