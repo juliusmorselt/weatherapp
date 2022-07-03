@@ -1,3 +1,4 @@
+var CURRENT_WEATHER_TOKEN = 'bda1e10853d01663bd1b4e6cad38abc9'
 //Search and fetch
 var inputbox = document.getElementById('search')
 inputbox.onclick = function() {
@@ -7,7 +8,7 @@ inputbox.onclick = function() {
             if(inputbox.value) {
                 
                 //First fetch API
-                fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputbox.value}&appid=${currentweatherkey}&units=metric`)
+                fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputbox.value}&appid=${CURRENT_WEATHER_TOKEN}&units=metric`)
                     .then(response => response.json())
                     .then(data => {
                         console.log(data)
